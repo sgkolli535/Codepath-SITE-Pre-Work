@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Memory Match!</h1>
+    
+    <p>
+      Welcome to Memory Match! Test your memory skills by repeating the sound and light patterns!
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()">
+      <img class="hiddenimg" src="https://cdn.glitch.com/c03d3274-b405-4578-8464-c20a2f2a828e%2Fkiwi.png?v=1616285295953" alt="kiwi"/>
+      </button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()">
+      <img class="hiddenimg" src="https://cdn.glitch.com/c03d3274-b405-4578-8464-c20a2f2a828e%2Feye-clipart-grape-18.png?v=1616285379544" alt="grapes"/>
+      </button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()">
+      <img class="hiddenimg" src="https://cdn.glitch.com/c03d3274-b405-4578-8464-c20a2f2a828e%2Fapple.png?v=1616285392663" alt="apple"/>
+      </button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()">
+      <img class="hiddenimg" src="https://cdn.glitch.com/c03d3274-b405-4578-8464-c20a2f2a828e%2Fbanana-png-clipart-12.png?v=1616285344446" alt="banana"/>
+      </button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()">
+      <img class="hiddenimg" src="https://cdn.glitch.com/c03d3274-b405-4578-8464-c20a2f2a828e%2Fstrawberry.png?v=1616285338764" alt="strawberry"/>
+      </button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()">
+      <img class="hiddenimg" src="https://cdn.glitch.com/c03d3274-b405-4578-8464-c20a2f2a828e%2Forange.png?v=1616285304487" alt="orange"/>
+      </button>
+    </div>
+  </body>
+</html>
